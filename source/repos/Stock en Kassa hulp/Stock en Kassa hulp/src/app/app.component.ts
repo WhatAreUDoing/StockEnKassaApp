@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 })
 export class MyApp {
   rootPage = HomePage;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
